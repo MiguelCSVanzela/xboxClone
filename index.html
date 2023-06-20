@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./media/xbox.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <title>XBOX</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg col-lg-12" id="cabecalho">
+        <div class="container d-lg-flex justify-content-center">
+
+            <div class="navbar-brand d-lg-inline col-lg-3 m-0 d-md-none d-sm-none">
+                <img src="./media/microsoftLogo.png" alt="microsoft logo" />
+                <span class="d-md-none d-sm-none d-lg-inline">|</span>
+                <img src="./media/xboxLogo.png" id="xbox-logo" alt="xbox logo" />
+            </div>
+
+            <ul class="nav d-lg-none d-sm-flex md sm">
+                <li>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+                <li>
+                    <a href="#" title="Pesquisar em xbox.com">
+                        <p class="d-inline d-xl-none d-lg-none d-md-none d-sm-none">Pesquisa</p>
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+                <li class=" microsoftLogo">
+                    <img src="./media/microsoftLogo.png" alt="microsoft logo" />
+                </li>
+                <li>
+                    <a href="#" title="0 itens no carrinho de compras">
+                        <p class="d-inline d-xl-none d-lg-none d-md-none d-sm-none">Carrinho</p>
+                        <i class="bi bi-cart3"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="d-inline d-xl-none d-lg-none d-md-none d-sm-none">Entrar</p>
+                        <i class="bi bi-person-square"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <nav class="collapse navbar-collapse col-lg-6 justify-content-end" id="menu">
+                <ul class="navbar-nav d-lg-block d-lg-flex d-md-none">
+                    <li class="nav-item dropdown">
+                        <button class="btn border-none btn dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Toda a Microsoft
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Microsolft 365</li>
+                            <li class="dropdown-item">Teams</li>
+                            <li class="dropdown-item">Windows</li>
+                            <li class="dropdown-item">Xbox</li>
+                            <li class="dropdown-item">Suporte</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-lg-inline d-sm-none">
+                        <a href="#" class="nav-link" title="Pesquisar em xbox.com">
+                            <p class="d-inline d-xl-inline d-lg-none">Pesquisa</p>
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-inline d-sm-none">
+                        <a href="#" class="nav-link" title="0 itens no carrinho de compras">
+                            <p class="d-inline d-xl-inline d-lg-none">Carrinho</p>
+                            <i class="bi bi-cart3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-lg-inline d-sm-none">
+                        <a href="#" class="nav-link">
+                            <p class="d-inline d-xl-inline d-lg-none">Entrar</p>
+                            <i class="bi bi-person-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="row text-left col-md-12 d-lg-none pt-sm-4 pt-lg-0" id="xbox-logo">
+                <img src="./media/xboxLogo.png" alt="xbox logo" />
+            </div>
+
+        </div>
+    </header>
+
+    <section class="container-carousel">
+
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carrosel">
+            <div class="carousel-inner">
+                <div data-bs-interval="1000000" class="carousel-item active">
+                    <img class="d-block img-fluid img1" src="./media/necron.jpg" alt="capa jogo necron" />
+                    <div class="carousel-caption">
+                        <h5>Necron</h5>
+                        <p>Torne-se o Mago mais Poderoso</p>
+                        <a href="">
+                            Comprar Agora
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-bs-interval="1000000" class="carousel-item">
+                    <img class="d-block img-fluid img2" src="/media/xbox.jpg" alt="xbox capa" />
+                    <div class="carousel-caption">
+                        <h5>
+                            Xbox
+                        </h5>
+                        <p>Venha Para o Universo Xbox</p>
+                        <a href="">
+                            Saiba mais
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-bs-interval="1000000" class="carousel-item">
+                    <img class="d-block img-fluid img3" src="./media/forza.jpg" alt="capa jogo forza" />
+                    <div class="carousel-caption">
+                        <h5>
+                            Forza
+                        </h5>
+                        <p>Corridas Eletrizantes</p>
+                        <a href="">
+                            Adquira Agora
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="controles">
+                <button class="carousel-control-prev bg-dark" type="button" data-bs-slide="prev"
+                    data-bs-target="#carrosel">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next bg-dark" type="button" data-bs-slide="next"
+                    data-bs-target="#carrosel">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carrosel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carrosel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="navegar">
+        <div class="container text-center d-lg-block w-100">
+            <div class="row d-lg-flex m-auto col-md-12">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4 ">
+                    <a href="#">
+                        <img src="/media/gamePass.svg" alt="link game pass" />
+                        <h5 class="text-center text-uppercase">game pass</h5>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                    <a href="#">
+                        <img src="/media/jogos.svg" alt="link para nossos jogos" />
+                        <h5 class="text-center text-uppercase">jogos</h5>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                    <a href="#">
+                        <img src="/media/consoles.svg" alt="link para nossos consoles" />
+                        <h5 class="text-center text-uppercase">consoles</h5>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                    <a href="#">
+                        <img src="/media/acessorios.svg" alt="link para nosso acessórios" />
+                        <h5 class="text-center text-uppercase">acessórios</h5>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                    <a href="#">
+                        <img src="/media/jogar.svg" alt="link para testar nosso jogos" />
+                        <h5 class="text-center text-uppercase">jogar</h5>
+                    </a>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+                    <a href="#">
+                        <img src="/media/log.svg" alt="link para logar em sua conta xbox" />
+                        <h5 class="text-center text-uppercase">entrar</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games">
+        <div class="games-container">
+            <div class="item item1 fullSize">
+                <img src="./media/starfiedWall.jpg" alt="" />
+            </div>
+            <div class="item item2 textGame">
+                <div class="col-xl-6 d-xl-none d-lg-block d-lg-block d-sm-block linkImg">
+                    <img src="./media/gamePassWallpaper.jpg" alt="" />
+                </div>
+                <div class="col-xl-6 col-lg-12 linkGame d-lg-inline d-lg-block d-md-block d-sm-block col-md-12">
+                    <h3>Descubra seu próximo jogo favorito</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <a href="#">Comece a jogar agora mesmo
+                        <i class="bi bi-chevron-double-right seta"></i>
+                    </a>
+                </div>
+                <div class="col-xl-6 d-xl-flex d-lg-none d-md-none d-sm-none linkImg2">
+                    <img src="./media/gamePassPocket.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item item3 fullSize d-lg-block">
+                <img src="./media/control.jpg" alt="" />
+            </div>
+
+            <div class="item item4 textGame">
+                <div class="col-xl-6 d-xl-none d-md-block d-lg-block linkImg">
+                    <img src="./media/dutyWallpaper.jpg" alt="" />
+                </div>
+                <div class="col-xl-6 d-xl-inline d-md-none d-lg-none d-sm-none linkImg2">
+                    <img src="./media/dutyPocket.jpg" alt="" />
+                </div>
+
+                <div class="col-xl-6 col-lg-12 p-sm-5 p-xl-4 linkGame d-xl-block d-lg-block d-sm-block">
+                    <h3>Call of Duty</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus sed nemo provident,
+                        quidem architecto, at ipsum.</p>
+                    <a href="#">Adquira Agora
+                        <i class="bi bi-chevron-double-right seta"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="item5">
+
+
+                <div class="col-xl-6 col-lg-12 
+                col-md-12 d-md-block textGame item d-xl-flex">
+
+                    <div class="col-xl-6 d-xl-none d-lg-block d-md-block d-sm-block linkImg">
+                        <img src="./media/starfieldPocket.jpg" alt="" />
+                    </div>
+                    <div class="col-xl-6 d-xl-flex w-50 d-lg-none d-md-none d-sm-none linkImg2">
+                        <img src="./media/starfiedWall.jpg" alt="" />
+                    </div>
+                    <div
+                        class="p-sm-5 p-xl-4 col-xl-6 col-lg-12 linkGame d-lg-inline d-lg-block d-md-block d-sm-block col-md-12">
+                        <h3>Starfield</h3>
+                        <p>Para Todos</p>
+                        <a href="#">Pré-Encomenda
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="col-xl-6 col-lg-12 col-md-12 textGame d-md-block d-xl-flex">
+                    <div class="col-xl-6 d-xl-none d-lg-block d-md-block d-sm-block linkImg">
+                        <img src="./media/maddenWallpaper.jpg" alt="" />
+                    </div>
+                    <div class="col-xl-6 d-xl-flex w-50 d-lg-none d-md-none d-sm-none linkImg2">
+                        <img src="./media/maddenPocket.jpg" alt="" />
+                    </div>
+                    <div
+                        class="p-sm-5 p-xl-4 col-xl-6 col-lg-12 col-md-12 linkGame d-xl-inline d-lg-block d-md-block d-sm-block">
+                        <h3>Madden NLF</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Ver Detalhes
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item item6">
+                <video src="./media/diablo.mp4" autoplay loop />
+            </div>
+            <div class="item7 ">
+
+
+                <div class="col-xl-6 col-lg-12 
+                col-md-12 d-md-block textGame item d-xl-flex">
+
+                    <div class="col-xl-6 d-xl-none d-lg-block d-md-block d-sm-block linkImg">
+                        <img src="./media/liesofpWallpaper.jpg" alt="" />
+                    </div>
+                    <div
+                        class="p-sm-5 p-xl-4 col-xl-6 col-lg-12 linkGame d-lg-inline d-lg-block d-md-block d-sm-block col-md-12">
+                        <h3>Lies of P</h3>
+                        <p>Bem-vindo às Terras vivas.</p>
+                        <a href="#">Ver Detalhes
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 d-xl-flex w-50 d-lg-none d-md-none d-sm-none linkImg2">
+                        <img src="./media/liesofpPocket.jpg" alt="" />
+                    </div>
+
+                </div>
+
+                <div class="col-xl-6 col-lg-12 col-md-12 textGame d-md-block d-xl-flex">
+
+                    <div class="col-xl-6 d-xl-none d-lg-block d-md-block d-sm-block linkImg">
+                        <img src="./media/ciberpunkWallpaper.jpg" alt="" />
+                    </div>
+                    <div class="col-xl-6 d-xl-flex w-50 d-lg-none d-md-none d-sm-none linkImg2">
+                        <img src="./media/ciberpunkPocket.jpg" alt="" />
+                    </div>
+                    <div
+                        class="p-sm-5 p-xl-4 col-xl-6 col-lg-12 col-md-12 linkGame d-xl-inline d-lg-block d-md-block d-sm-block">
+                        <h3>Cyber Punk 2077: Phantom Liberty</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#">Ver Detalhes
+                            <i class="bi bi-chevron-double-right seta"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="item item8 col-xl-6 col-lg-12 col-md-12 col-sm-12 linkGame text-secundary">
+                <div class="col-xl-6 d-xl-none d-lg-block d-md-block d-sm-block linkImg">
+                    <img src="./media/payday.jpg" alt="" />
+                </div>
+                <div
+                    class="p-sm-5 p-xl-4 bg-white col-xl-6 col-lg-12 col-md-12 linkGame d-xl-inline d-lg-block d-md-block d-sm-block">
+                    <h3 class="text-uppercase">Payday 3</h3>
+                    <p>Este é o ano de PAYDAY 3</p>
+                    <a href="#">Pré-Encomenda
+                        <i class="bi bi-chevron-double-right seta"></i>
+                    </a>
+                </div>
+                <div class="col-xl-6 d-xl-flex w-50 d-lg-none d-md-none d-sm-none linkImg2">
+                    <img src="./media/payday.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item item9 fullSize d-lg-block">
+                <img src="./media/cyberpunk.jpg" alt="" />
+            </div>
+            <div class="item item10 fullSize d-lg-block">
+                <img src="./media/diabloPocket.jpg" alt="" />
+            </div>
+            <div class="item item11 d-xl-flex">
+                <div class="col-xl-6 d-xl-none d-lg-block d-md-block d-sm-block linkImg">
+                    <img src="./media/streetFighterWallpaper.jpg" alt="" />
+                </div>
+                <div
+                    class="p-sm-5 p-xl-4 col-xl-6 col-lg-12 linkGame d-lg-inline d-lg-block d-md-block d-sm-block col-md-12">
+                    <h3>Street Fighter 6</h3>
+                    <p>Seu momento. Sua luta. </p>
+                    <a href="#">Adquira Agora
+                        <i class="bi bi-chevron-double-right seta"></i>
+                    </a>
+                </div>
+                <div class="col-xl-6 d-xl-flex w-50 d-lg-none d-md-none d-sm-none linkImg2">
+                    <img src="./media/streetFighterPocket.jpg" alt="" />
+                </div>
+            </div>
+            <div class="item containerImg">
+                <img src="./media/promocoes.jpg" class="item12" alt="" />
+            </div>
+        </div>
+    </section>
+    <div class="row bg-white">
+        <ul class="social-links">
+            <li>
+                Seguir o Xbox
+            </li>
+            <li>
+                <i class="bi bi-envelope"></i>
+            </li>
+            <li>
+                <i class="bi bi-facebook"></i>
+            </li>
+            <li>
+                <i class="bi bi-twitter"></i>
+            </li>
+            <li>
+                <i class="bi bi-instagram"></i>
+            </li>
+        </ul>
+    </div>
+    <div class="row footer-container d-flex justify-content-start">
+        <div class="linksFooter">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th scope="col">Navegue</th>
+                        <th scope="col">Recursos</th>
+                        <th scope="col">Microsolft Store</th>
+                        <th scope="col">Para desenvolvedores</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Xbox consoles</td>
+                        <td>Noticias do Xbox</td>
+                        <td>Conta Microsoft</td>
+                        <td>Jogos</td>
+                    </tr>
+                    <tr>
+                        <td>Jogos Xbox</td>
+                        <td>Suporte Xbox</td>
+                        <td>Suporte da Microsoft Store</td>
+                        <td>ID@</td>
+                    </tr>
+                    <tr>
+                        <td>Xbox Game Pass</td>
+                        <td>Feedback</td>
+                        <td>Devoluções</td>
+                        <td>Windows</td>
+                    </tr>
+                    <tr>
+                        <td>Acessórios do Xbox</td>
+                        <td>Padrões da Comunidade</td>
+                        <td>Ratreamento De Pedidos</td>
+                        <td>Programa de Criadores</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Aviso de potenciais convulsões por fotossensibilidade</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="row">
+                <ul class="d-flex">
+                    <li>
+                        Português (Brasil)
+                    </li>
+                    <li>
+                        Suas Opções de Privacidade da Califórnia
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul class="d-flex justify-content-between subLinks">
+                    <li>
+                        Entre em contato com a Microsolft
+                    </li>
+                    <li>
+                        Privacidade e Cookies
+                    </li>
+                    <li>
+                        Gerenciar Cookies
+                    </li>
+                    <li>
+                        Ética e Compliance
+                    </li>
+                    <li>
+                        Nota Legal
+                    </li>
+                    <li>
+                        Marcas
+                    </li>
+                    <li>
+                        Aviso de Terceiros
+                    </li>
+                    <li>
+                        Sobre os Nossos Anúncios
+                    </li>
+                    <li>
+                        &copy; Microsoft 2023
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</body>
+
+</html>

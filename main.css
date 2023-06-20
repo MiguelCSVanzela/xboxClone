@@ -1,0 +1,933 @@
+/* :root {
+    --bs-dropdown-border-radius: none !important;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borde -box;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+/* header */
+.navbar-brand img {
+    height: 20px;
+}
+
+.navbar-brand span {
+    margin: 0 20px;
+    color: black;
+    font-size: 20px;
+    height: 20px;
+}
+
+.navbar-collapse a.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Menu Dropdown */
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown button,
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.dropdown button:active {
+    border-bottom: none;
+}
+
+
+/* Carrossel */
+
+#carrosel .carousel-inner {
+    max-height: 800px;
+    display: flex;
+}
+
+#carrosel:hover .carousel-control-next,
+#carrosel:hover .carousel-control-prev {
+    display: block;
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+.carousel-caption {
+    margin-bottom: 150px;
+}
+
+.carousel-caption h5 {
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.carousel-caption p {
+    font-size: 40px;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    background-color: #9bf00b;
+    color: #000;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.carousel-caption a:hover {
+    text-decoration: underline;
+    transition: all .2s ease-in-out;
+    background-color: #107c10;
+}
+
+.carousel-caption a:hover .seta {
+    margin-left: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    top: 45%;
+    margin: 10px;
+    display: none;
+}
+
+.carousel-control-prev-icon {
+    text-align: center;
+    right: 10px;
+}
+
+/* Navegar */
+
+#navegar {
+    margin: 30px;
+}
+
+#navegar a {
+    text-decoration: none;
+    color: #107c10;
+    transition: all 0.3s ease-in-out;
+    font-weight: lighter;
+    padding-bottom: 50px;
+}
+
+#navegar a:hover {
+    border-bottom: 3px solid #107c10;
+    height: 200%;
+    padding-bottom: 70px;
+}
+
+#navegar .col-2 {
+    text-align: center;
+}
+
+#navegar img {
+    height: 60px;
+    margin: 5px;
+}
+
+#navegar a h5 {
+    margin: 10px;
+}
+
+/* Games Section */
+
+.games-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.games-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    margin: 2px 0;
+}
+
+.item div {
+    border: 0.5 solid rgba(64, 62, 62, 0.652);
+}
+
+.item1 {
+    grid-row: span 2;
+}
+
+.item5 {
+    grid-column: span 2;
+    display: flex;
+}
+
+.item5 div {
+    width: 50%;
+}
+
+.item3 {
+    grid-row: span 2;
+}
+
+.item6 {
+    grid-column: span 2;
+}
+
+.item7 {
+    grid-column: span 2;
+    display: flex;
+}
+
+.item7 div {
+    width: 50%;
+}
+
+.item7 div,
+.item7 a,
+.item11 div a {
+    background-color: #fff;
+    color: #000;
+}
+
+.item9 {
+    grid-row: span 2;
+}
+
+.item10 {
+    grid-row: span 2;
+}
+
+.item12 {
+    grid-column: span 2;
+}
+
+.fullSize img {
+    height: 100%;
+    width: 50vw;
+}
+
+div.textGame {
+    background-color: #107c10;
+    color: #fff;
+}
+
+.linkGame {
+    margin: auto;
+}
+
+.linkGame a,
+.linkGame.text-secundary a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: all .2s ease-in;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.linkGame.text-secundary a {
+    color: #000;
+}
+
+.linkGame a:hover {
+    border-bottom: 2px solid #9bf00b;
+    color: #9bf00b;
+}
+
+.linkGame a:hover .seta {
+    margin-left: 5px;
+}
+
+/* Rodapé */
+.row .social-links {
+    width: 100%;
+    background-color: #fff;
+}
+
+.social-links {
+    margin: 30px 60px;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.social-links li i:hover {
+    cursor: pointer;
+    background-color: #f2f2f2;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.linksFooter {
+    margin: 30px 60px;
+}
+
+.linksFooter,
+.linksFooter li {
+    font-size: 17px;
+    list-style: none;
+    margin: 30px 60px;
+}
+
+.linksFooter li {
+    margin: 0 10px;
+}
+
+.linksFooter td:hover,
+.linksFooter li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Small Devices */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .sm {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .sm .microsoftLogo {
+        margin: 0 130px;
+    }
+
+    .navbar .row img,
+    .navbar img {
+        width: 100px;
+    }
+
+    .navbar .sm {
+        border-bottom: 1px solid gray;
+    }
+
+    .sm li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+
+    /* Carousel */
+
+    .carousel-inner {
+        min-height: 95vh;
+    }
+
+    .carousel-item img {
+        transform: scale(1);
+        object-fit: cover;
+    }
+
+    .carousel-item .img1 {
+        object-position: 68% 50%;
+    }
+
+    .carousel-item .img2 {
+        object-position: 25% 50%;
+    }
+
+    .carousel-item .img3 {
+        object-position: 32% 50%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 100px;
+        width: 20%;
+        border-radius: 50px;
+        padding: 5px;
+        top: 40%;
+        margin: 10px;
+        display: none;
+    }
+
+    .carousel-control-prev-icon {
+        text-align: center;
+        right: 10px;
+    }
+
+    #carrosel:hover .carousel-control-next,
+    #carrosel:hover .carousel-control-prev {
+        display: block;
+    }
+
+    #navegar .row {
+        margin: 20px;
+    }
+
+    #navegar a {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    #navegar img {
+        height: 70px;
+        margin: 2px;
+    }
+
+    .games-container {
+        width: 100vw;
+        display: block;
+    }
+
+    .fullSize img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .linkImg img {
+        width: 100%;
+    }
+
+
+    .containerImg img {
+        max-height: 500px;
+        max-width: 100vw;
+        height: 100%;
+    }
+
+    .linkGame {
+        text-align: left;
+        padding: 0;
+        display: block;
+    }
+
+    .linkGame h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .linkGame p {
+        font-size: 22px;
+    }
+
+    .linkGame a {
+        font-weight: bolder;
+        word-break: normal;
+        font-size: 12px;
+    }
+
+    .item5,
+    .item7 {
+        display: block;
+    }
+
+    .item5 div,
+    .item7 div {
+        width: 100%;
+    }
+
+    .item6 video {
+        width: 100%;
+    }
+
+    /* Rodapé */
+    .social-links {
+        margin: 10px 10px;
+    }
+
+    .social-links li {
+        font-size: 1em;
+    }
+
+    .linksFooter,
+    .linksFooter li {
+        font-size: 1em;
+        margin: 10px 10px;
+    }
+
+    thead,
+    tbody {
+        line-height: 13px;
+    }
+
+    table th,
+    table td {
+        width: 20vw;
+        font-size: 15px;
+    }
+
+    .row .subLinks {
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row .subLinks li {
+        line-height: 10px;
+    }
+
+}
+
+/* Medium Devices */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .md {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .md .microsoftLogo {
+        margin: 0 130px;
+    }
+
+    .navbar .row img,
+    .navbar img {
+        width: 150px;
+    }
+
+    .navbar .md {
+        border-bottom: 1px solid gray;
+    }
+
+    .md li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+
+    .carousel-inner {
+        min-height: 95vh;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+    }
+
+    .carousel-item .img1 {
+        object-position: 68% 50%;
+    }
+
+    .carousel-item .img2 {
+        object-position: 25% 50%;
+    }
+
+    .carousel-item .img3 {
+        object-position: 32% 50%;
+    }
+
+    #navegar {
+        margin: 25px auto;
+    }
+
+    #navegar .row {
+        margin: 0;
+    }
+
+    #navegar a {
+        padding-bottom: 0;
+    }
+
+    #navegar img {
+        height: 53px;
+        margin: 2px;
+    }
+
+    .games-container {
+        width: 100vw;
+        display: block;
+    }
+
+    .fullSize img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .linkImg img {
+        width: 100vw;
+    }
+
+    .containerImg img {
+        max-height: 500px;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .linkGame {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100vw;
+    }
+
+    .linkGame h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .linkGame p {
+        font-size: 22px;
+    }
+
+    .linkGame a {
+        font-weight: bolder;
+        word-break: normal;
+        font-size: 12px;
+    }
+
+    .item5,
+    .item7 {
+        display: block;
+    }
+
+    .item5 div,
+    .item7 div {
+        width: 100%;
+    }
+
+    .item6 video {
+        width: 100%;
+    }
+
+    /* Rodapé */
+    .social-links {
+        margin: 10px 10px;
+    }
+
+    .social-links li {
+        font-size: 1em;
+    }
+
+    .linksFooter,
+    .linksFooter li {
+        font-size: 1em;
+        margin: 10px 10px;
+    }
+
+    thead,
+    tbody {
+        line-height: 13px;
+    }
+
+    table th,
+    table td {
+        width: 20vw;
+        font-size: 15px;
+    }
+
+    .row .subLinks {
+        max-width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .row .subLinks li {
+        line-height: 10px;
+    }
+}
+
+/* Large Devices */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        height: 45px;
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        height: 24px;
+    }
+
+    .carousel-inner {
+        min-height: 95vh;
+    }
+
+    .carousel-item img {
+        transform: scale(1);
+        object-fit: cover;
+    }
+
+    .carousel-item .img1 {
+        object-position: 75% 50%;
+    }
+
+    .carousel-item .img2 {
+        object-position: 22.5% 50%;
+    }
+
+    .carousel-item .img3 {
+        object-position: 26% 50%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        top: 46%;
+        margin: 0 20px;
+    }
+
+    #navegar .row {
+        margin: 20px 0;
+    }
+
+    #navegar a {
+        padding-bottom: 0;
+    }
+
+    #navegar img {
+        height: 53px;
+        margin: 2px;
+    }
+
+    .games-container {
+        width: 100vw;
+        display: block;
+    }
+
+    .fullSize img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .linkImg img {
+        width: 100vw;
+    }
+
+    .containerImg img {
+        max-height: 500px;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .linkGame {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100vw;
+    }
+
+    .linkGame h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .linkGame p {
+        font-size: 22px;
+    }
+
+    .linkGame a {
+        font-weight: bolder;
+        word-break: normal;
+        font-size: 12px;
+    }
+
+    .item5,
+    .item7 {
+        display: block;
+    }
+
+    .item5 div,
+    .item7 div {
+        width: 100%;
+    }
+
+    .item6 video {
+        width: 100%;
+    }
+
+    thead,
+    tbody {
+        line-height: 13px;
+    }
+
+    table th,
+    table td {
+        width: 10vw;
+        font-size: 15px;
+    }
+
+    .row .subLinks {
+        max-width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .row .subLinks li {
+        line-height: 22px;
+
+    }
+}
+
+/* Extra Large Devices */
+@media screen and (min-width: 1200px) {
+    .navbar-brand {
+        height: 45px;
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+        height: 24px;
+    }
+
+    .container-carousel {
+        width: 98vw;
+        margin: 0 2px;
+    }
+
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        top: 46%;
+        margin: 0 20px;
+    }
+
+    .carousel-caption {
+        margin-bottom: 50px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .carousel-caption a {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    #navegar {
+        margin: 30px 0;
+    }
+
+    #navegar a {
+        padding-bottom: 0;
+    }
+
+    #navegar img {
+        height: 53px;
+        margin: 2px;
+    }
+
+
+    .games-container {
+        width: 100vw;
+    }
+
+    .linkGame {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+
+    .linkGame h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .linkGame p {
+        font-size: 13px;
+    }
+
+    .linkGame a {
+        font-weight: bolder;
+        word-break: normal;
+        font-size: 12px;
+    }
+
+    .fullSize img {
+        height: 100%;
+        width: 50vw;
+    }
+
+    .item {
+        width: 50vw;
+        display: flex;
+        border-bottom: 1px solid rgba(229, 228, 228, 0.801);
+    }
+
+    .linkImg2 img {
+        width: 25vw;
+    }
+
+    .item5 div {
+        width: 50vw;
+        display: flex;
+    }
+
+    .item6 video {
+        width: 100vw;
+    }
+
+
+    .item7 div,
+    .item7 a,
+    .item11 div a {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .item.containerImg img {
+        max-width: 100vw;
+        height: auto;
+        width: auto;
+    }
+
+    thead,
+    tbody {
+        line-height: 13px;
+    }
+
+    table th,
+    table td {
+        width: 10vw;
+        font-size: 15px;
+    }
+
+    .row .subLinks {
+        max-width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .row .subLinks li {
+        line-height: 22px;
+
+    }
+}
